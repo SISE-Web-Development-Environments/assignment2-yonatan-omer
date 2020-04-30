@@ -120,7 +120,7 @@ function checkSettings() {
         return;
     }
 
-    
+    document.getElementById("settingsShown").style = "display: 'block;"
     settingToStart();
 
 }
