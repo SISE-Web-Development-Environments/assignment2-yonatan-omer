@@ -1,4 +1,6 @@
-
+$(document).ready(function () {
+	alert("in jquery.js");
+})
 function checkRegisterInput() {
 
     let formValid = true;
