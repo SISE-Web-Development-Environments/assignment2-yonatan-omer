@@ -1,6 +1,3 @@
-$(document).ready(function () {
-	alert("in script.js");
-})
 function RegisterFunction() {
 	earaseLogText();
 	document.getElementById("Register").style = "display: inline-block;"
