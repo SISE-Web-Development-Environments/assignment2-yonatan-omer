@@ -1,6 +1,3 @@
-$(document).ready(function () {
-	alert("in jquery.js");
-})
 function checkRegisterInput() {
 
     let formValid = true;
@@ -83,7 +80,6 @@ function checkRegisterInput() {
 
 }
 function checkSettings() {
-/*
     let numberOfBalls = document.getElementById("numOfBalls").value;
     let timeToPlay = document.getElementById("timer").value;
     let numberOfMonster = document.getElementById("monster").value;
@@ -123,10 +119,8 @@ function checkSettings() {
         alert("please enter an right key");
         return;
     }
-*/
-   // document.getElementById("settingsShown").style = "display: 'block;"
-    WelcomeFunction();
-    //settingToStart();
+	
+    settingToStart();
 
 }
 
