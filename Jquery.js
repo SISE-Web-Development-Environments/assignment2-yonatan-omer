@@ -122,8 +122,8 @@ function checkSettings() {
         return;
     }
 */
-    document.getElementById("settingsShown").style = "display: 'block;"
-    document.getElementById("Settings").style = "display: 'none;"
+   // document.getElementById("settingsShown").style = "display: 'block;"
+    WelcomeFunction();
     //settingToStart();
 
 }
