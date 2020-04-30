@@ -14,7 +14,8 @@ function LoginFunction() {
 function WelcomeFunction() {
 	earaseRegText();
 	earaseLogText();
-	
+	bounus_life = document.getElementById("bounus_life");
+	bounus_life.play();
 	window.clearInterval(interval);
 	document.getElementById("game").style = "display: none;"
 	document.getElementById("Register").style = "display: none;"
