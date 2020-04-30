@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> PACMAN</title>
+	<link rel="stylesheet" type="text/css" href="layout.css" />
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+	<script src="./jquery-3.4.1.slim.min.js"></script>
+
+	<script src="script.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+	<div id="header">
+		<img src="http://www.free-pacman.com/wp-content/themes/pacman/pacmangame/images/pacmanlogo1.png" width="40">
+		<text> PACMAN by Yonatan Grinshpan & Omer Shlomo</text>
+
+
+	</div>
+
+	<div id="menu">
+
+		<table width="21%">
+
+			<tr>
+				<td button id="Welcomebtn" onclick="WelcomeFunction()">
+					<me><u>Welcome</u></me>
+				</td>
+				<td button id="Registerbtn" onclick="RegisterFunction()">
+					<me><u>Register</u></me>
+				</td>
+				<td button id="Loginbtn" onclick="LoginFunction()">
+					<me><u>Login</u></me>
+				</td>
+				<td button id="Aboutbtn" onclick="AboutFunction()">
+					<me><u> About </u></me>
+				</td>
+
+
+			</tr>
+
+		</table>
+
+	</div>
+
+	<div id="content">
+	</div>
+
+	<div id="Welcome">
+		<h1> <b><i>Welcome!</i></b>
+			<h1>
+				<img src="https://pacman.platzh1rsch.ch/img/instructions/instructions_chase.PNG" class="center">
+				<h2> please login or register <h2>
+						<button id="Registerbutton" onclick="RegisterFunction()">
+							<btn>Register </btn>
+						</button>
+						<button id="Loginbutton" onclick="LoginFunction()">
+							<btn>Login </btn>
+						</button>
+		<image src="lifepac.jpeg">
+
+
+	</div>
+
+	<div id="footer">
+		<div id="gameBackBtn" style="visibility: hidden;">
+
+			<table>
+				<tr>
+					<td><button id="Backbtn" onclick="QuitToMainFunc()">
+							<me><u>Back to main menu?</u></me>
+						</button>
+					<td><button id="Backbtn" onclick="restart()">
+							<me><u> restart?</u></me>
+						</button>
+
+				</tr>
+			</table>
+
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h3 style="color: white"> This site was made by Yonatan Grinshpan and Omer Shlomo </h3>
+		<h3 style="color: white"> Contact us omershlomo@gmail.com </h3>
+		<h3 style="color: white"> Copyrights © All Rights Reserved </h3>
+	</div>
+
+	<div id="Login" style="visibility: hidden;">
+		<h1><u>Log in </u></h1>
+		<section>
+			<table>
+				<tr>
+					<td>
+						<label> <b> Username: </b> </label>
+					</td>
+					<td>
+						<input id="logName" type="text" placeholder="Enter Username" value="p">
+					</td>
+				<tr>
+				<tr>
+					<td>
+						<label><b> Password: </b></label>
+					</td>
+					<td>
+						<input id="logPswd" type="password" placeholder="Enter Password" value="p">
+					</td>
+				<tr>
+				<tr>
+					<td>
+						<button type="button" onclick="checkLogin()">Play Now!</button>
+					</td>
+					<td>
+						<label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+					</td>
+				<tr>
+			</table>
+			<br>
+			<br>
+			<img src="https://cdn.digitalsport.co/wp-content/uploads/2017/08/pac-man.jpg" width="250">
+			<br>
+			<button id="Backbtn" onclick="WelcomeFunction()">
+				<me><u>Back to main menu?</u></me>
+		</section>
+
+	</div>
+
+	<div id="Register" style="visibility: hidden;">
+		<h1><u>Register to play</u></h1>
+
+		<div id="container">
+			<form action="action_page.php">
+				<table>
+					<tr>
+						<td>
+							<label><b>Username:</b></label>
+						</td>
+						<td>
+							<input id="username" type="text" placeholder="Enter Username" required>
+						</td>
+					<tr>
+					<tr>
+						<td>
+							<label><b>Password: </b></label>
+						</td>
+						<td>
+							<input id="regPswd" type="password" placeholder="Enter Password" required>
+						</td>
+					<tr>
+					<tr>
+						<td>
+							<label><b>First Name:</b></label>
+						</td>
+						<td>
+							<input id="firstName" type="text" placeholder="Enter your first name" required>
+						</td>
+					<tr>
+					<tr>
+						<td>
+							<label><b>Last Name:</b></label>
+						</td>
+						<td>
+							<input id="lastName" type="text" placeholder="Enter your last name" required>
+						</td>
+					<tr>
+					<tr>
+						<td>
+							<label><b>Email:</b></label>
+						</td>
+						<td>
+							<input id="email" type="email" placeholder="Enter your Email" required>
+						</td>
+					<tr>
+
+					<tr>
+
+						<td>
+							<label><b>Date of birth:</b></label>
+						</td>
+
+						<td>
+
+							<input type="date" id="birthday" value="2000-01-01" required>
+
+
+						</td>
+
+					<tr>
+
+					<tr>
+						<td>
+							<input type="submit" value="Register!" onclick="checkRegisterInput()">
+						</td>
+					<tr>
+
+				</table>
+				<img src="https://www.gamingdebugged.com/wp-content/uploads/2014/01/pacman-ghosts.jpg" width="220">
+			</form>
+		</div>
+
+		<button id="Backbtn" onclick="WelcomeFunction()">
+			<me><u>Back to main menu?</u></me>
+
+	</div>
+
+
+
+
+	<div id="modal">
+		<div id="modal-content">
+			<button id="x" onclick="closeMyModal()"> <b>X</b> </button>
+			<p><b>Made by Omer Shlomo and Yonatan Grinshpan</b> </p>
+			<p>
+				<b>These are our plugins:</b>
+				<br>
+				- ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js
+				<br>
+				- ./jquery-3.4.1.slim.min.js"
+			</p>
+			<p>
+				<b>Difficulties we have encoutered during this project:</b>
+				<br>
+				- Making the monsters and having them chase pacman.
+				<br>
+				- Generating random colors and display them.
+				<br>
+				- Having monsters not eat the balls.
+				<br>
+				- Collisions of monsters and pacman.
+			</p>
+
+
+		</div>
+	</div>
+
+
+	<div id="Settings" class="Settings" style="visibility: hidden;">
+		<h1> <b><i>Game Settings:</i></b></h1>
+		<table>
+			<tr>
+				<td>
+					<b> Move Up: </b>
+				</td>
+				<td>
+					<input id="up" type="text" value="w" onkeydown="getKey()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b> Move Down: </b>
+				</td>
+				<td>
+					<input id="down" type="text" value="s" onkeydown="getKey()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b> Move Left: </b>
+				</td>
+				<td>
+					<input id="left" type="text" value="a" onkeydown="getKey()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b> Move Right: </b>
+				</td>
+				<td>
+					<input id="right" type="text" value="d" onkeydown="getKey()">
+				</td>
+			</tr>
+			<td>
+				<b> Number Of Balls: </b>
+			</td>
+			<td>
+				<input name="balls" type="number" id="numOfBalls" min="50" max="90" value="90">
+			</td>
+			<tr>
+				<td>
+					<b> Color Of 5 Points Balls: </b>
+				</td>
+				<td>
+					<input type="color" id="5pointBalls" name="5favcolor" value="#FF3A3A">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b> Color Of 15 Points Balls: </b>
+				</td>
+				<td>
+					<input type="color" id="15pointBalls" name="15favcolor" value="#3AFF90">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b> Color Of 25 Points Balls:</b>
+				</td>
+				<td>
+					<input type="color" id="25pointBalls" name="25favcolor" value="#2330df">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Time To Play (seconds): </b>
+				</td>
+				<td>
+					<input name="myTimer" type="number" id="timer" min="60" value="120">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b> Number Of Monsters: </b>
+				</td>
+				<td>
+					<input name="monster" type="number" id="monster" min="1" max="4" value="2">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<type button id="Randombtn" value="random" onclick="randomFunc()">
+				</td>
+			</tr>
+		</table>
+		<table>
+			<div>
+				<tr>
+					<td><button id="checkGame" onclick="checkSettings()">
+							<me><u>Start!</u></me>
+					<td> <button id="checkGame" onclick="randomFunc()">
+							<me><u>Random!</u></me>
+				</tr>
+			</div>
+		</table>
+		<br>
+
+		<div>
+			<button id="Backbtn" onclick="WelcomeFunction()">
+				<me><u>Back to main menu?</u></me>
+		</div>
+	</div>
+
+	<div>
+		<table>
+			<br>
+
+			<tr>
+				<div id="time">
+					<td> <label for="lblUserName"><b><u>name:</label>
+					<td> <input id="lblUserName" type="text" />
+
+					<td> <label for="lblTime"><b><u>time:</label>
+					<td> <input id="lblTime" type="text" />
+					<td> <label for="lblScore"><b><u>score:</label>
+					<td> <input id="lblScore" type="text" />
+					<td> <label for="lblLives"><b><u>lives left:</label>
+					<td> <input id="lblLives" type="text" />
+
+				</div>
+			</tr>
+	</div>
+
+	</table>
+
+	<div id="game" style="visibility: hidden;">
+		<canvas id="canvas" width="900" height="600">
+
+			Your browser does not support the HTML5 canvas tag.
+			<button id="Backbtn" onclick="WelcomeFunction()">
+				<me><u>Back to main menu?</u></me>
+				<audio id="blockerSound" preload="auto">
+					<source src="Final Destination (Melee) - Super Smash Bros. Brawl.mp3" type="audio/mpeg"></audio>
+				<audio id="startSound" preload="auto">
+					<source src="8bit_start_vo_03.ogg" type="audio/mpeg"></audio>
+				<audio id="victorySound" preload="auto">
+					<source src="8bit_lead_vo_02.ogg" type="audio/mpeg"></audio>
+				<audio id="point50" preload="auto">
+					<source src="8bit_lead_vo_03.ogg" type="audio/mpeg"></audio>
+				<audio id="hurt" preload="auto">
+					<source src="8bit_hurt_vo_01.ogg" type="audio/mpeg"></audio>
+				<audio id="missionFailed" preload="auto">
+					<source src="8bit_die_vo_06.ogg" type="audio/mpeg"></audio>
+				<audio id="bounus_life" preload="auto">
+					<source src="8bit_reload_01.ogg" type="audio/mpeg"></audio>
+		</canvas>
+
+
+	</div>
+
+	<div id="settingsShown" style="visibility: hidden;">
+		<table height="40px;">
+			<h2>Game settings:</h2>
+			<tr>
+				<td>
+					<label for="lblUp">
+						<b> Move Up: </b>
+					</label>
+				</td>
+				<td>
+					<output id="lblUp">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="lblDown"></label>
+					<b> Move Down: </b>
+					</label>
+				</td>
+				<td>
+					<output id="lblDown">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="lblLeft">
+						<b> Move Left: </b>
+					</label>
+				</td>
+				<td>
+					<output id="lblLeft">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="lblRight">
+						<b> Move Right: </b>
+					</label>
+				</td>
+				<td>
+					<output id="lblRight">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<lable for="lblNumOfBalls">
+						<b> starting balls: </b>
+					</lable>
+				</td>
+				<td>
+					<output id="lblNumOfBalls">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<lable for="lblNumOfBallsLeft">
+						<b> Number Of Balls left: </b>
+					</lable>
+				</td>
+				<td>
+					<output id="lblNumOfBallsLeft">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<lable for="pointColor5"></lable>
+					<b> 5 point balls: </b>
+				</td>
+				<td>
+					<output id="pointColor5" type="color"><B>color</B></output>
+
+
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<label for="pointColor15"></label>
+					<b> 15 point Balls: </b>
+				</td>
+				<td>
+					<output id="pointColor15"><B>color</B> </output>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="pointColor25"></label>
+					<b> 25 point Balls:</b>
+				</td>
+				<td>
+					<output id="pointColor25"><B>color</B> </output>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="lblTtime">
+						<b>Time To Play (seconds): </b>
+					</label>
+				</td>
+				<td>
+					<output id="lblTtime">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="lblMonster">
+						<b> Number Of Monsters: </b>
+					</label>
+				</td>
+				<td>
+					<output id="lblMonster">
+				</td>
+			</tr>
+
+		</table>
+		<table height="10px;">
+			<h2>Information:</h2>
+			<tr>
+				<td>
+
+					<image src="pinkPacman.jpeg">
+
+				</td>
+				<td>
+					<p>Gives you 50 points</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+
+					<image src="lifepac.jpeg">
+
+				</td>
+				<td>
+					<p>Gives you 2 lives</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<image src="timePic.jpeg"></image>
+
+
+				</td>
+				<td>
+					<p> Reduces the time by 10 seconds </p>
+				</td>
+			</tr>
+
+
+		</table>
+	</div>
+
+
+
+
+
+
+</body>
+
+</html>
