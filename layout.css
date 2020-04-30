@@ -1,0 +1,274 @@
+#header
+{
+	background: darkblue;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1536px;
+	height: 28px;
+	line-height: 10px;
+	color: white;
+}
+#menu
+{
+	background: black;
+	font-size: 25px;
+	position: absolute;
+	top: 28px;
+	left: 0px;
+	width: 1536px;
+	text-align: left;
+	
+}
+#Welcome
+{
+	background: rgb(245, 46, 46);
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	width: 1536px;
+	height: 580px;
+	text-align: left;
+	
+}   
+#Settings
+{
+	background: linear-gradient(110deg, #cfa629 20%, #dfcf3e 60%);
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	width: 1536px;
+	height: 580px;
+	text-align: left;
+	
+}   
+#footer
+{
+	background-image: linear-gradient(rgb(110, 64, 64),rgb(21, 21, 53));
+
+	
+	position: absolute;
+	top: 660px;
+	left: 0px;
+	width: 1536px;
+	height: 309px;
+}
+me:hover
+{
+	color: white;
+	cursor: pointer;
+}
+
+btn:hover{
+	font-size: large;
+}
+#Loginbutton
+{
+    height:50px;
+	width:100px;
+	font-weight:900;
+	background: rgb(51, 51, 235);
+	cursor: pointer;
+
+	
+}
+#Registerbutton
+{
+	left: 0px;
+	right: 0px;
+    height:50px;
+	width:100px;
+	font-weight: 800;
+	background: green;
+	cursor: pointer;
+	caret-color: green;
+	
+}
+.center
+{
+	
+margin-right: -300px;
+	width: 300px;
+}
+#Login{
+	background: rgb(82, 82, 252);
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	width: 1536px;
+	height: 580px;
+	text-align: left;
+}
+
+#Welcomebtn
+{
+	color: red;
+	left: 0px;
+	right: 0px;
+    height:50px;
+    width:100px;
+	
+	cursor: pointer;
+	caret-color: red;
+}
+#Registerbtn
+{
+	color: green;
+	left: 0px;
+	right: 0px;
+    height:50px;
+    width:100px;
+	
+	cursor: pointer;
+	caret-color: red;
+}
+#Loginbtn
+{
+	color: rgb(57, 57, 255);
+	left: 0px;
+	right: 0px;
+    height:50px;
+    width:100px;
+	cursor: pointer;
+	caret-color: red;
+}
+#Aboutbtn
+{
+	color: yellow;
+	left: 0px;
+	right: 0px;
+    height:50px;
+    width:100px;
+
+	cursor: pointer;
+	caret-color: red;
+}
+#Backbtn
+{
+	color: black(0, 0, 0);
+	left: 0px;
+	right: 0px;
+	height:50px;
+	text-size-adjust: 350px;
+    width:200px;
+	background: rgb(0, 0, 0);
+	cursor: pointer;
+	caret-color: red;
+	font-size: large;
+	color:white;
+	font-size: 18px;
+}
+#Register{
+	background: rgb(11, 189, 65);
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	width: 1536px;
+	height: 580px;
+	text-align: left;
+}
+#pass{
+	width: 12em;
+	height:2.8em;
+	color: black;
+	text-size-adjust: 300px;
+	background-color: black;
+	color:white;
+	cursor: pointer;
+	font-size: large;
+	
+}
+#x{
+	line-height: 12px;
+	width: 18px;
+	font-size: 8pt;
+	font-family: tahoma;
+	margin-top: 1px;
+	margin-right: 2px;
+	position:absolute;
+	top:0;
+	right:0;
+	padding-right: 12px;
+}
+
+#modal {
+  display: none;
+  position: fixed; 
+  padding-top: 50px;
+  left: 0; 
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  background: transparent;
+}
+#modal-content {
+	position: absolute;
+	color: black;
+	right: 600px;
+	left: 600px;
+	font-size: large;
+	height: 250px;
+	width: 420px;
+	top: 250px;
+	
+	background-color: rgb(224, 226, 81);
+	background-size: 8%;
+	outline: black 3px solid;
+}
+
+#Gamebtn
+{
+	color: black(0, 0, 0);
+	left: 0px;
+	right: 0px;
+	height:50px;
+	text-size-adjust: 350px;
+    width:200px;
+	background: rgb(0, 0, 0);
+	cursor: pointer;
+	caret-color: red;
+	font-size: large;
+	color:white;
+	font-size: 18px;
+}
+#game{
+	background: linear-gradient(rgb(255, 243, 173) 20%,rgb(255, 237, 135));
+	outline: black 3px solid;
+	width: 904px;
+}
+#checkGame{
+	color: black(0, 0, 0);
+	left: 0px;
+	right: 0px;
+	height:50px;
+	text-size-adjust: 350px;
+    width:174px;
+	background: rgb(0, 0, 0);
+	cursor: pointer;
+	caret-color: red;
+	font-size: large;
+	color:white;
+	font-size: 18px;
+}	
+#settingsShown{
+	width: 300px;
+    margin-left: 935px;
+	margin-top:-605px;
+	background-color: rgb(197, 197, 253);
+	outline: black 3px solid;
+	
+}
+
+#pointColor5{
+	height: 25px;
+	width: 50px;
+}
+#pointColor15{
+	height: 25px;
+	width: 50px;
+}
+#pointColor25{
+	height: 25px;
+	width: 50px;
+}
+
