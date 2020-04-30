@@ -121,6 +121,7 @@ function checkSettings() {
     }
 
     document.getElementById("settingsShown").style = "display: 'block;"
+    document.getElementById("Settings").style = "display: 'none;"
     //settingToStart();
 
 }
