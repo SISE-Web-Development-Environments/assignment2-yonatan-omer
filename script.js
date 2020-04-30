@@ -12,8 +12,8 @@ function LoginFunction() {
 }
 
 function WelcomeFunction() {
-	earaseRegText();
-	earaseLogText();
+	//earaseRegText();
+	//earaseLogText();
 
 	//window.clearInterval(interval);
 	document.getElementById("game").style = "display: none;"
