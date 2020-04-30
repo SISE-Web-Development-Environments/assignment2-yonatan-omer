@@ -121,12 +121,11 @@ function checkSettings() {
         alert("please enter an right key");
         return;
     }
-
+*/
     document.getElementById("settingsShown").style = "display: 'block;"
     document.getElementById("Settings").style = "display: 'none;"
     //settingToStart();
-*/
-    alert("a");
+
 }
 
 
