@@ -90,11 +90,13 @@ function checkSettings() {
     let downK = document.getElementById("down").value;
     let leftK = document.getElementById("left").value;
     let rightK = document.getElementById("right").value;
-  
+    window.alert("a");
+  /*
     if (numberOfBalls > 90 || numberOfBalls < 50) {
         window.alert("number of balls must be between 50 and 90");
         return;
     }
+    
     if(timeToPlay < 60){
         window.alert("game time must be at least 60 seconds")
         return;
@@ -123,7 +125,7 @@ function checkSettings() {
     document.getElementById("settingsShown").style = "display: 'block;"
     document.getElementById("Settings").style = "display: 'none;"
     //settingToStart();
-
+*/
 }
 
 
