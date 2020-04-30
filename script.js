@@ -14,6 +14,7 @@ function LoginFunction() {
 function WelcomeFunction() {
 	earaseRegText();
 	earaseLogText();
+	
 	window.clearInterval(interval);
 	document.getElementById("game").style = "display: none;"
 	document.getElementById("Register").style = "display: none;"

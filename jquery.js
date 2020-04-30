@@ -1,3 +1,4 @@
+
 function checkRegisterInput() {
 
     let formValid = true;
@@ -80,6 +81,7 @@ function checkRegisterInput() {
 
 }
 function checkSettings() {
+
     let numberOfBalls = document.getElementById("numOfBalls").value;
     let timeToPlay = document.getElementById("timer").value;
     let numberOfMonster = document.getElementById("monster").value;
@@ -93,7 +95,6 @@ function checkSettings() {
         window.alert("number of balls must be between 50 and 90");
         return;
     }
-    
     if(timeToPlay < 60){
         window.alert("game time must be at least 60 seconds")
         return;
@@ -118,7 +119,8 @@ function checkSettings() {
         alert("please enter an right key");
         return;
     }
-	
+
+    
     settingToStart();
 
 }
